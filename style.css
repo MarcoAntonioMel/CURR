@@ -99,7 +99,7 @@ margin-left: 37px;
 .habilidades__lista{
     display: flex;
     flex-flow: wrap;
-    padding: 0;
+    padding: 0;   
 }
 
 .habilidades__elemento{
@@ -173,6 +173,30 @@ margin-top: 20px;
     width: 250px;
 }
 
+.formacion__botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.formacion__boton{
+    width: 104px;
+    height: 40px;
+    border: #2A7AE4;
+    background-color: #ffffff;
+    color: #2A7AE4;
+    margin-bottom: 36px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #2A7AE4;
+}
+
+.formacion__boton:hover{
+    background-color: #2A7AE4;
+    color: #ffffff;
+}
+
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
 .proyectos{
@@ -198,7 +222,7 @@ margin-top: 20px;
 
 .proyectos__descripcion{
     margin: 5px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
 }
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
