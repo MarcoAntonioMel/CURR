@@ -274,10 +274,15 @@ margin-top: 20px;
 
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {
+
     .cabecera {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        display: flex;
+        justify-content: left
+        ;
+    }
+
+    .navegacion__correo{
+    margin-left: 400px;
     }
 
     .cabecera__logo {
@@ -289,25 +294,110 @@ margin-top: 20px;
     }
 
     .navegacion__lista {
-        display: flex;
+        display: none;
         flex-direction: row;
         gap: 1rem;
         margin-top: 0;
+        
     }
 
     .navegacion__elemento a {
         font-size: 1rem;
     }
+
+    .presentacion{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .presentacion__foto{
+        display: flex;
+        align-self: center;
+        width: 180px;
+        height: 180px;
+    }
+
+    .presentacion__contenedor{
+        margin-right: 60px;
+    }
+
+    .habilidades__elemento{
+        width: 225px;
+    }
+
+    .aficiones__elemento{
+        width: 225px;
+    }
+
+    .formacion__lista{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .proyectos__imagen{
+        width: 700px;
+    }
+
+    .proyectos__nombre{
+        font-size: 25px;
+    }
+
+    .contacto__formulario{
+        width: 700px;
+    }
+
+    .contacto__campo{
+        width: 700px;
+    }
+
+    .responsividad{
+        display: flex;
+        justify-content: center;
+    }
+
+    .formacion__boton{
+        margin-bottom: 100px;
+    }
+
 }
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
     /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
-    .cabecera__titulo {
-        font-size: 1.8rem;
+   
+    .cabecera{
+        display: flex;
     }
 
-    .navegacion__elemento a {
-        font-size: 1.1rem;
+    .navegacion__correo{
+        display: none;
     }
+
+    .navegacion__lista{
+        display: flex;
+        margin-left: 280px;
+    }
+
+    .presentacion__contenedor{
+        width: 100%;
+        margin-right: 180px;
+    }
+    
+    .sobre-mi__texto{
+        width: 700px;
+    }
+
+    .habilidades__elemento{
+        width: 140px;
+    }
+
+    .aficiones__elemento{
+        width: 140px;
+    }
+
+  
+
+
 }
